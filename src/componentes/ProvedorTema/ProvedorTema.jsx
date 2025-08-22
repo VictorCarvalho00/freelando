@@ -17,7 +17,7 @@ const tema = {
             c: ''
         },
         neutras: {
-            a: '',
+            a: '#373737',
             b: '',
             c: '',
             d: ''
@@ -29,15 +29,13 @@ const tema = {
     },
 
     espacamentos: {
+        xs: '8px',
         s: '16px',
         l: '32px',
     },
 
     fontFamily: "'Montserrat', sans-serif",
-
 };
-
-
 
 export const ProvedorTema = ({ children }) => {
     return (

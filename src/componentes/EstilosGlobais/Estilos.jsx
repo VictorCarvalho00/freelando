@@ -1,6 +1,6 @@
 import { Global } from "@emotion/react"
 
-const estilos = tema => {
+export const estilos = tema => {
     return {
           html: {
             fontFamily: tema.fontFamily
@@ -14,4 +14,6 @@ const estilos = tema => {
 export const Estilos = () => {
     return (<Global styles={estilos} />)
 }
+
 export default Estilos
+
