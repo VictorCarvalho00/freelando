@@ -117,7 +117,8 @@ function App() {
             </Card>
           </Col>
         </Row>
-        <Rodape>
+      </Container>
+      <Rodape>
           <Container>
             <Row align='center'>
               <Col>
@@ -152,7 +153,6 @@ function App() {
             </Row>
           </Container>
         </Rodape>
-      </Container>
     </ProvedorTema>
   );
 }

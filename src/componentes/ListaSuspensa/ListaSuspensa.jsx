@@ -118,7 +118,6 @@ export const ListaSuspensa = ({ titulo, opcoes }) => {
                 estaAberta={estaAberta}
                 onClick={() => alternarVisibilidade(!estaAberta)}
                 onKeyDown={manipularTeclaDoTeclado}
-
             >
                 <div>
                     {opcaoSelecionada ? opcaoSelecionada.text : 'Selecione'}
