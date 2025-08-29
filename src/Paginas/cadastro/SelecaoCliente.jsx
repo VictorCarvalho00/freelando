@@ -2,12 +2,14 @@ import { Col, Row } from "react-grid-system"
 import { Tipografia } from "../../componentes/Tipografia/Tipografia"
 import { Link } from "../../componentes/Link/Link"
 
+import { Link as RouterLink } from 'react-router-dom'
+
 import cliente from './assets/cliente.png'
 import freelance from './assets/freela.png'
 
 const SelecaoCliente = () => {
     return (
-        <>
+        <div>
             <Tipografia variante="h1" componente="h1">
                 Crie seu cadastro
             </Tipografia>
@@ -16,10 +18,12 @@ const SelecaoCliente = () => {
             </Tipografia>
             <Row>
                 <Col md={6} sm={12}>
-                    <img src={cliente} alt="" />
-                    <Tipografia variante="body" componente="body">
-                        Sou cliente precisso de um freela!
-                    </Tipografia>
+                    <RouterLink to='interesses'>
+                        <img src={cliente} alt="" />
+                        <Tipografia variante="body" componente="body">
+                            Sou cliente precisso de um freela!
+                        </Tipografia>
+                    </RouterLink>
                 </Col>
                 <Col md={6} sm={12}>
                     <img src={freelance} alt="" />
@@ -36,7 +40,7 @@ const SelecaoCliente = () => {
                     <Link variante="secundaria">Faça login!</Link>
                 </p>
             </div>
-        </>
+        </div>
     )
 }
 
