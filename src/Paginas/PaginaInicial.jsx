@@ -108,7 +108,7 @@ const PaginaInicial = () => {
                 <Col lg={6} md={6} sm={6}>
                   <div style={{ textAlign: 'right' }}>
                     <Botao>
-                      Proxima
+                      Próxima
                     </Botao>
                   </div>
                 </Col>
