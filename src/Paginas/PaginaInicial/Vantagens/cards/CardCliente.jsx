@@ -12,9 +12,9 @@ const CardCliente = ({ icone, texto }) => {
             <Card comBorda={false}>
                 {icone}
                 <Tipografia componente="body" variante="body">
-                    <SpnEstilizado>
+                    <SpanEstilizado>
                         {texto}
-                    </SpnEstilizado>
+                    </SpanEstilizado>
                 </Tipografia>
             </Card>
         </Col>

@@ -1,9 +1,10 @@
-import { Col } from "react-grid-system"
+import { Col, Container } from "react-grid-system"
 import Banner from "./Banner/Banner"
 import Bloco from "./Bloco"
 import { cardsClientes, cardsFreelas, habilidades } from "./Dados"
 import CardCliente from "./Vantagens/cards/CardCliente"
 import CardFreela from "./Vantagens/cards/CardFreela"
+import Chip from "../../componentes/Chip/Chip"
 
 const PaginaInicial = () => {
     return (
