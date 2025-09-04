@@ -8,6 +8,7 @@ import { CampoTexto } from "../../componentes/CampoTexto/CampoText"
 import { Botao } from "../../componentes/Botao/Botao"
 import { Link as RouterLink } from "react-router-dom"
 import { Link } from "../../componentes/Link/Link"
+import { useSessaoUsuarioContext } from "../../contexto/SessaoUsuario"
 
 const FormEstilizado = styled.form`
     border-bottom: 1px solid;
@@ -19,8 +20,11 @@ const Login = () => {
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
 
-    const tentarEfetuarLogin = async (evento) => {
+    const { login } = useSessaoUsuarioContext()
 
+    const tentarEfetuarLogin = async (evento) => {
+        evento.preventDefault();
+        login(email, senha);
     }
 
     return (

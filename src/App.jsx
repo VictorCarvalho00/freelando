@@ -2,14 +2,17 @@ import { RouterProvider } from "react-router-dom"
 import { ProvedorTema } from "./componentes/ProvedorTema/ProvedorTema"
 import Estilos from "./componentes/EstilosGlobais/Estilos"
 import { router } from "./Router/Router"
+import { SessaoUsuarioProvider } from "./contexto/SessaoUsuario"
 
 function App() {
   return (
     <ProvedorTema>
       <Estilos />
-      <RouterProvider router={router} />
+      <SessaoUsuarioProvider>
+        <RouterProvider router={router} />
+      </SessaoUsuarioProvider>
     </ProvedorTema>
   )
 }
- 
+
 export default App

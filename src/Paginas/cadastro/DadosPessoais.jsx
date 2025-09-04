@@ -82,10 +82,10 @@ const DadosPessoas = () => {
             </Row>
             <Row>
                 <Col lg={6} md={6} sm={6}>
-                    <CampoTexto titulo="Senha" valor={usuario.senha} onChange={setSenha} />
+                    <CampoTexto titulo="Senha" valor={usuario.senha} onChange={setSenha} tipo="password" />
                 </Col>
                 <Col lg={6} md={6} sm={6}>
-                    <CampoTexto titulo="Repita a senha" valor={usuario.senhaConfirmada} onChange={setSenhaConfirmada} />
+                    <CampoTexto titulo="Repita a senha" valor={usuario.senhaConfirmada} onChange={setSenhaConfirmada} tipo="password" />
                 </Col>
             </Row>
             <Row>
