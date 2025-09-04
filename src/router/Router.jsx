@@ -6,15 +6,23 @@ import Interesses from "../Paginas/cadastro/Interesses";
 import DadosPessoas from "../Paginas/cadastro/DadosPessoais";
 import Concluido from "../Paginas/cadastro/Concluido";
 import PaginaInicial from "../Paginas/PaginaInicial/PaginaInicial";
+import Pagina404 from "../Paginas/Erros/Pagina404";
+import Login from "../Paginas/Login/Login";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <LayoutBase />,
+        ErrorBoundary: Pagina404,
         children: [
             {
                 path: "",
                 element: <PaginaInicial />
+            },
+            {
+                path: "login",
+                element: <Login/>
+
             },
             {
                 path: 'cadastro',
